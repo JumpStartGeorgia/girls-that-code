@@ -31,7 +31,7 @@ All participants who attend most classes and complete the majority of homework a
                       *   *         ***         *   *
                      *    *        *****        *    *
                     *     *       *******       *     *
-                   *      *        *****        *      *
+                   *      *       *******       *      *
                     *     *         ***         *     *
                      *    *      *********      *    *
                       *   *     ***********     *   *
