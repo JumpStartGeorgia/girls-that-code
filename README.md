@@ -21,7 +21,7 @@ Our second session's orientation is on 22 September at 19:00 at [JumpStart's off
 
 To learn more, check out [our wiki](https://github.com/JumpStartGeorgia/girls-that-code/wiki) with tons of useful information like ... our [syllabus](https://github.com/JumpStartGeorgia/girls-that-code/wiki/Syllabus)!
 
-> <h1 style="color:#D424F3;">**[Click here to learn how to install Ruby on your computer](https://github.com/JumpStartGeorgia/girls-that-code/wiki/How-to-install-Ruby-on-your-computer)**</h1>
+> <h1>**[Click here to learn how to install Ruby on your computer](https://github.com/JumpStartGeorgia/girls-that-code/wiki/How-to-install-Ruby-on-your-computer)**</h1>
 
 All participants who attend most classes, and complete the majority of [homework assignments](https://github.com/JumpStartGeorgia/girls-that-code/tree/master/homework) and the [quizzes](https://github.com/JumpStartGeorgia/girls-that-code/tree/master/quizzes) will:
 * receive their very own fancy certificate
