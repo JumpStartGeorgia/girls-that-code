@@ -2,6 +2,8 @@ In school exit exams, girls in Georgia do slightly better than their male counte
 
 
 
+
+
 <img align="right" style="margin-top:30px" alt="Girls That Code Logo" title="Girls That Code Logo" src="images/girlsthatcode200px.png" />
 * Math
 * Biology
