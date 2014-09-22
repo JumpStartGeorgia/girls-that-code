@@ -1,11 +1,10 @@
 In school exit exams, girls in Georgia do slightly better than their male counterparts across the board in:
+<img align="right" alt="Girls That Code Logo" title="Girls That Code Logo" src="images/girlsthatcode200px.png" />
 * Math
 * Biology
 * Chemistry
 * Physics
 * Geography
-
-<img align="right" alt="Girls That Code Logo" title="Girls That Code Logo" src="images/girlsthatcode200px.png" />
 
 While at the same time, girls lack the confidence and support needed to do well in these fields.
 Did you know that:
