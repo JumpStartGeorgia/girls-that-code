@@ -1,5 +1,3 @@
-<img align="center" src="https://github.com/JumpStartGeorgia/girls-that-code/raw/master/images/girlsthatcode.png">
-
 In school exit exams, girls in Georgia do slightly better than their male counterparts across the board in:
 * Math
 * Biology
