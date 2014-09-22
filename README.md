@@ -1,14 +1,14 @@
 In school exit exams, girls in Georgia do slightly better than their male counterparts across the board in:
--Math
--Biology
--Chemistry
--Physics
--Geography
+* Math
+* Biology
+* Chemistry
+* Physics
+* Geography
 
 While at the same time, girls lack the confidence and support needed to do well in these fields.
 Did you know that:
--only 59.2 % of parents agree that women have the same level of capabilities in technical subjects as men
--95.9 % of students consider their parents' role important in the study process
+* only 59.2 % of parents agree that women have the same level of capabilities in technical subjects as men
+* 95.9 % of students consider their parents' role important in the study process
 
 That is some messed up statistics.
 
