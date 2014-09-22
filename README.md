@@ -18,4 +18,23 @@ It is time to turn the tables on those statistics. Girls That Code is a supporti
 
 Our second session's orientation is on 22 September at 19:00 at [JumpStart's office](http://maps.ge/s/SkUe). Come join us!
 
+All participants who attend most classes and complete the majority of homework assignments will:
+* receive their very own fancy certificate
+* will be eligible for a letter of recommendation
+* will leave with the satisfaction that they have a new tool to use in problem solving
+* of course, the possibility of free t-shirts, stickers and more as well
 
+```
+
+                                    ***********************
+                                    *                     *  
+                                *   *         ***         *   *
+                               *    *        *****        *    *
+                              *     *       *******       *     *
+                             *      *        *****        *      *
+                              *     *         ***         *     *
+                               *    *      *********      *    *
+                                *   *     ***********     *   *
+                                        ***************
+
+```
