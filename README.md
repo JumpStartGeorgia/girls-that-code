@@ -1,3 +1,6 @@
+![girls that code logo]( "Girls That Code Logo")
+
+
 In school exit exams, girls in Georgia do slightly better than their male counterparts across the board in:
 * Math
 * Biology
