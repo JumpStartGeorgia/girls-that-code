@@ -21,7 +21,7 @@ Our second session's orientation is on 22 September at 19:00 at [JumpStart's off
 
 To learn more, check out [our wiki](https://github.com/JumpStartGeorgia/girls-that-code/wiki) with tons of useful information like ... our [syllabus](https://github.com/JumpStartGeorgia/girls-that-code/wiki/Syllabus)!
 
-All participants who attend most classes and complete the majority of homework assignments will:
+All participants who attend most classes, and complete the majority of [homework assignments](https://github.com/JumpStartGeorgia/girls-that-code/tree/master/homework) and the [quizzes](https://github.com/JumpStartGeorgia/girls-that-code/tree/master/quizzes) will:
 * receive their very own fancy certificate
 * will be eligible for a letter of recommendation
 * will leave with the satisfaction that they have a new tool to use in problem solving
