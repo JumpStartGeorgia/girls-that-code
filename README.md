@@ -1,4 +1,4 @@
-![girls that code logo]( "Girls That Code Logo")
+![girls that code logo](https://github.com/JumpStartGeorgia/girls-that-code/blob/master/images/girlsthatcode.png "Girls That Code Logo")
 
 
 In school exit exams, girls in Georgia do slightly better than their male counterparts across the board in:
