@@ -14,10 +14,10 @@ This assignment should cover everything we did this week. If you get stuck, don'
 5. Open your text editor. Create a new file and save it in the newly created directory, `hw1`. Call it `firstname_lastname.rb` (where you use your first and last name in the filename).
 6. Write some lines of code that assigns the following text to variable named `poem`:
 
->  Jack and Jill went up the hill
->  To fetch a pail of water.
->  Jack fell down and broke his crown,
->  And Jill came tumbling after.`
+`  Jack and Jill went up the hill
+   To fetch a pail of water.
+   Jack fell down and broke his crown,
+   And Jill came tumbling after.`
 
 7. First, use a method on poem to separate each line of text into an array of lines. You did this in Try Ruby.
 8. Add another method to take that array of lines and reverse them.
@@ -26,7 +26,7 @@ This assignment should cover everything we did this week. If you get stuck, don'
 11. Print the value of the variable new_poem to the screen using puts.
 12.   When you execute the file, you should see this:
 
->  And Jill came tumbling after.
->  Jack fell down and broke his crown,
->  To fetch a pail of water.
->  Jack and Jill went up the hill`
+`  And Jill came tumbling after.
+   Jack fell down and broke his crown,
+   To fetch a pail of water.
+   Jack and Jill went up the hill`
