@@ -31,6 +31,7 @@
   url1 = "http://www.ruby-doc.org/core-2.1.3/"
 
 # IRB
+# Running a Ruby script file
 #
 ## Variables and Strings
 #
@@ -101,5 +102,9 @@
   url2 = "http://www.ruby-doc.org/core-2.1.3/String.html"
 #
 ## Basic String Methods
-#
-#
+
+  str10 = "whatchamacallit"
+  puts str10.reverse
+  puts str10.length
+  puts 40.to_s.reverse
+  
