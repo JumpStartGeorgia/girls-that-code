@@ -21,7 +21,7 @@
 #  Jack fell down and broke his crown,
 #  And Jill came tumbling after.
 #
-# 7. Create a method called 'new_poem' and set it equal to the string that is
+# 7. Create a variable called 'new_poem' and set it equal to the string that is
 #    created by performing the following methods on the previous variable
 #    in one line from left to right
 # 7.1. First, use a method on the variable 'poem' to separate each line of text 
