@@ -76,9 +76,9 @@ puts "* after str.upcase!, str = #{str}"
 
 # ########################
 # ########################
-# Now, a quick text editor lesson:
-# Select all of the text above this comment block and comment it out
-# Now, select all of the text after this comment block until you see the word STOP and uncomment it
+# ## Now, a quick text editor lesson:
+# ## Select all of the text above this comment block and comment it out
+# ## Now, select all of the text after this comment block until you see the word STOP and uncomment it
 # ########################
 # ########################
 
@@ -110,6 +110,7 @@ puts "* after str.upcase!, str = #{str}"
 # puts "(a + b) * c = #{(a + b) * c}"
 # puts "a / b = #{a / b}"
 # puts "c / b = #{c / b}"
+# #### when you do divide integers, you get back an integer!
 
 # #### - Floats
 # puts ""
@@ -144,6 +145,12 @@ puts "* after str.upcase!, str = #{str}"
 ##### STOP UNCOMMENTING HERE
 ########################
 
+# ########################
+# ########################
+# ## Now, Select all of the text above this comment block and comment it out
+# ## Now, select all of the text after this comment block until you see the word STOP and uncomment it
+# ########################
+# ########################
 
 
 # ########################
@@ -184,6 +191,12 @@ puts "* after str.upcase!, str = #{str}"
 ##### STOP UNCOMMENTING HERE
 ########################
 
+# ########################
+# ########################
+# ## Now, Select all of the text above this comment block and comment it out
+# ## Now, select all of the text after this comment block until you see the word STOP and uncomment it
+# ########################
+# ########################
 
 # ########################
 # puts ""
