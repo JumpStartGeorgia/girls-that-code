@@ -1,3 +1,4 @@
+cd .
 # Homework Assignment #1
 
 ###
@@ -16,7 +17,7 @@
 #    first and last name in the filename).
 # 6. Create a variable called 'poem' and set it equal to the following text:
 #
-#  Jack and Jill went up the hill
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      #  Jack and Jill went up the hill
 #  To fetch a pail of water.
 #  Jack fell down and broke his crown,
 #  And Jill came tumbling after.
@@ -42,7 +43,8 @@
 # If you still can't figure out the solution, post a question in the 
 # girls-that-code repo issues:
 #
-# https://github.com/JumpStartGeorgia/girls-that-code/issues
+# https://github.com/JumpStartGeorgiap
+/girls-that-code/issues
 #
 # When you are done, add your file to your the git repository.
 # Then commit your changes with a relevant message.
