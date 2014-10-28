@@ -62,6 +62,20 @@ str = "This is a sample sentence with UPPER and lower case."
 # you can add to the end of the string by using a negative index value, where -1 is the end of the string
 puts "* insert text at -6 (before case) = #{str.insert(-6, to_add)}"
 
+#### -- index
+#### index tells you where the first occurance of a character(s) in a string is located
+#### IMPORTANT: the index always starts at 0
+#### if the character(s) are not found, nil is returned
+puts ""
+puts "---- String Index ----"
+# reset the str variable
+str = "This is a sample sentence with UPPER and lower case."
+puts "* text: '#{str}'"
+puts "* '.' has index of #{str.index('.')}, but the length of the text is #{str.length}"
+# the above two numbers are off by one because the index starts at 0 while counting the length starts at 1
+puts "* 'is' has index of #{str.index('is')}"
+puts "* after this first 'is', the next one is at index #{str.index('is', str.index('is')+1)}"
+
 #### - !
 #### ! tells ruby to run the method and then save the new value into the variable
 puts ""
@@ -69,6 +83,9 @@ puts "---- ! and strings ----"
 # reset the str variable
 str = "This is a sample sentence with UPPER and lower case."
 str.downcase!
+str = str.downcase
+str.gsub!('sample', 'expert ').gsub!('is', 'as')
+puts "after gsub!, str = #{str}"
 puts "* after str.downcase!, str = #{str}"
 str.upcase!
 puts "* after str.upcase!, str = #{str}"
@@ -83,7 +100,7 @@ puts "* after str.upcase!, str = #{str}"
 # ########################
 
 
-# ########################
+########################
 # puts ""
 # puts ""
 # puts "---------------------------------"
@@ -198,7 +215,7 @@ puts "* after str.upcase!, str = #{str}"
 # ########################
 # ########################
 
-# ########################
+########################
 # puts ""
 # puts ""
 # puts "---------------------------------"
@@ -219,8 +236,22 @@ puts "* after str.upcase!, str = #{str}"
 # puts "* this is what an array looks like if you puts it by itself:"
 # puts names
 
+# #### Personlly, I prefer to write out arrays in puts statements using #{} for it shows exactly what is in
+# #### the array and I can tell if something is a string, number, etc. 
+# #### By doing just puts array, everything is converted to a string and it is not always easy to tell what 
+# #### type of data is in the array.
+
 # #### you can find out how many items are in an array using .length
 # puts "* there are #{names.length} names"
 
 # #### you can sort the array using .sort
 # puts "* the sorted array = #{names.sort}"
+
+# #### this is what an array with different types of data looks like
+# test = "qwert"
+# puts "this is an array with different types of data #{[123, '123123', 4*4, test]}"
+
+# #### this is an array with an array inside of it
+# array = [[123, 123, 234], 234, 345]
+# puts "arrays of arrays #{array}"
+
