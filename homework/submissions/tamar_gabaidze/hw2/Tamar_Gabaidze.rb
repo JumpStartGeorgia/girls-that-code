@@ -21,23 +21,23 @@ puts "----- Step 4 -----"
 puts "------------------" 
 
 index_water = new_poem.index('water')
-new_poem=new_poem.insert(index_water, 'borjomi ')
-puts "new_poem = #{new_poem}"
+new_poem = new_poem.insert(index_water, 'borjomi ')
+puts "Updated new_poem = #{new_poem}"
 
 puts "------------------"
 puts "----- Step 5 -----"
 puts "------------------" 
 
 length_poem = poem.length
-puts "length_poem=#{length_poem}"
+puts "length of the poem = #{length_poem}"
 count_a = poem.count "a"
-puts "count_a= #{count_a}"
+puts "count how many 'a's are in poem = #{count_a}"
 count_g = poem.count "g"
-puts "count_g= #{count_g}"
+puts "count how many 'g's are in poem= #{count_g}"
 calc = (count_a - count_g)*5
-puts "calc= #{calc}"
+puts "calculate = #{calc}"
 calc_float = calc.to_f
-puts "calc_float= #{calc_float}"
+puts "change calc to float = #{calc_float}"
 
 # puts "------------------"
 # puts "----- Step 6 -----"
