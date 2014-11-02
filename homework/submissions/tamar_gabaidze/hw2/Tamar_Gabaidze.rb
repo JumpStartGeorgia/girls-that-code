@@ -39,6 +39,10 @@ puts "calculate = #{calc}"
 calc_float = calc.to_f
 puts "change calc to float = #{calc_float}"
 
-# puts "------------------"
-# puts "----- Step 6 -----"
-# puts "------------------" 
+puts "------------------"
+puts "----- Step 6 -----"
+puts "------------------" 
+
+poem.gsub!('Jill','Nino and Tako').gsub!('Jack','Giorgi')
+puts "poem = #{poem}"
+puts "length/count = #{(poem.length/poem.count(' ').to_f).round(5)}"
