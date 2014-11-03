@@ -65,4 +65,13 @@ puts new_poem
 puts "length/count=#{(poem.length/poem.count(' ').to_f).round(5)}"
 
 
+########################
+## Feedback from Jason
+## - 'insert' automatically updates the value of the string so you do not need new_poem = new_poem.insert
+##    You just need new_poem.insert
+## - Counting of letters 'a' and 'g' - great job of using downcase!
+## - Calc - good use of using '()' for the computation!
+## - Bonus - when you use gsub!, the '!' updates the value of poem so you do not need new_poem = poem, 
+##   Just need poem.gsub!
+## - Overall, good job!
 

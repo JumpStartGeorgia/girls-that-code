@@ -48,3 +48,14 @@ poem = %q{
   puts "-------- Bonus activity-------"
   puts ""
   puts poem
+
+
+########################
+## Feedback from Jason
+## - Inserting borjomi - 'index_water' is supposed to equal the index of 'water' in 'new_poem' 
+##   and then you use that index in the insert statement instead of using 66
+## - Calculations - what you did is correct, but the answer is not ideal due to mathematical order of operations. 
+##   Next time consider using ()
+## - Calc float - good use of using class to see that it is a float!
+## - Good job on the bonus question! is there a reason you did not do the last part?
+## Good job!

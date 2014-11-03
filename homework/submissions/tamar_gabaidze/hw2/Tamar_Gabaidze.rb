@@ -46,3 +46,11 @@ puts "------------------"
 poem.gsub!('Jill','Nino and Tako').gsub!('Jack','Giorgi')
 puts "poem = #{poem}"
 puts "length/count = #{(poem.length/poem.count(' ').to_f).round(5)}"
+
+########################
+## Feedback from Jason
+## - 'insert' automatically updates the value of the string so you do not need new_poem = new_poem.insert
+##    You just need new_poem.insert
+## - calc - good use of using '()' for the computation!
+## - bonus - great job!
+## - Overall, good job!

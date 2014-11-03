@@ -86,7 +86,17 @@ puts "poem_length / poem_space_count = #{(poem.length/poem.count(' ').to_f).roun
 ##########################################################################################################################################################
 
 
-
+########################
+## Feedback from Jason
+## - 'insert' automatically updates the value of the string so you do not need new_poem = new_poem.insert
+##    You just need new_poem.insert
+## - Counting of letters 'a' and 'g' - great job of using downcase!
+## - Counting - you have count'a' and count'g' - this works, but better way to write so it is easier to read is count 'a' or count('a')
+## - Calc - good use of using '()' for the computation!
+## - Bonus - when you use gsub!, the '!' updates the value of poem so you do not need new_poem = poem, 
+##   Just need poem.gsub!
+## - Your comments at the end - you are correct. Strip will remove extra spaces at the beginning and end of the string, but not in the middle. 
+## - Overall, good job!
 
 
 
