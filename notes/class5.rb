@@ -72,6 +72,7 @@ puts str7
 str8 str5.insert(0, "Tinatin")
 puts str8
 
- 
+#### An example of a nested array 
 
-
+rows = [["John", "Doe", 33], ["Jane", "Doe", 35], ["Alex", "Trebech", 58]]
+puts rows[2][1] # Trebech
