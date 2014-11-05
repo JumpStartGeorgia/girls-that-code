@@ -18,41 +18,51 @@
 # 1. Please, make a string of as many Georgian names as possible.
 #    Ex. names_string = "Nino Mariam Jason Mariam Irakli Ia Anton Eric Elisabeth
 #                        Nathan Brian Tamo Kristine Giorgi"
+#
 #        puts names_string    
 #
 #    Now, using what you have learned so far, turn that string into an array of
 #    names and assign it to the variable 'names'. Print that variable to the
 #    screen.
 #
+#    puts names
+#
 # 2. Please, repeat the first exercise, but create an array without creating a
 #    string first. There are several ways to create an array. Do it two
 #    different ways. Assign those arrays to the variables 'names1' and 'names2'.
 #    Print those variables to the screen.
 #
-# 3. Going back to the array 'names' from question 1, create a variable called
-#    'num_names' and insert it into a string that, in English, writes to the
-#    screen using a complete sentence the number of names you thought of. Use
-#    the 'uniq' method to ensure that you only have one of each name.
+#    puts names1
+#    puts names2
 #
-# 4. Now, go back to your names and create a nested array in which each name
-#    (they should all be unique at this point) also has a 'gender' attribute. 
-#    Assign this new array to the variable 'demographics'. Write to the screen
-#    the gender of the last person in your list using a complete sentence. 
+# 3. Going back to the array 'names' from question 1, use the 'uniq' method to 
+#    ensure that you only have one of each name and create a variable called
+#    'num_names' and assign it to the number of names in the array. Insert it 
+#    into a string that, in English, writes to the screen using a complete 
+#    sentence the number of names you thought of. Assign that to a string
+#    'num_names_str'.
 #
-# 5. Now, choose a name from your array 'names' and assign it to a variable  
-#    'random_name'. Now, using the 'names' array, find that name
-#    (remember question 4 from the previous homework assignment?), get its
+#    puts num_names_str
+#
+# 4. Now, go back to your 'names' array from question 1 and create a nested  
+#    array in which each name (they should all be unique at this point) is    
+#    replaced with a name and a 'gender' attribute. Assign this new array to the   
+#    variable 'demographics'. Write to the screen the gender of the last person   
+#    in your list using a complete sentence.
+#
+# 5. Now, choose a name from your array 'names' and get its
 #    index number, and assign it to a variable called 'name_index'. Then, using
 #    your variables, write, using a complete English sentence, the name to the
-#    screen. It should read something like: "Mariam is my friend" 
+#    screen. It should read something like: "Mariam is my friend". Remember 
+#    question 4 from the previous homework assignment?  
 #
 # 6. Bonus Question!
 #
-#    Go back to question 5 and use the variable 'random_name' to delete that
-#    element in the array. This uses some methods from question 5 as well as a
-#    new method allowing you to use the index of an element in an array and
-#    delete that element. Use the Array API to find this method and use it.
-#    Write the new array to screen.    
+#    Go back to question 5 and use the variable 'name_index' to delete that
+#    element in the array 'names'. Use the Array API to find this method and use it.
+#    Write the new array to screen.
+#
+#   puts names
 ###
 
 ### 
