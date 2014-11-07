@@ -1,6 +1,6 @@
 poem = %Q{
 To fetch a pail of water.
 Jack fell down and broke his crown,
-ANd Jill came tumbling after.
+And Jill came tumbling after.
 }
 new_poem = "poem\n new line and \t a tab."
