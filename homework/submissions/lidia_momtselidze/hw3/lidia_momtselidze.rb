@@ -54,3 +54,8 @@ puts "------------------"
 
 names.delete_at(name_index)
 puts "names =\n#{names}" 
+
+
+########################
+## Feedback from Jason
+## - awesome job!
