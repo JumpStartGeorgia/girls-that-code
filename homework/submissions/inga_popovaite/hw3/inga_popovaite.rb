@@ -35,3 +35,20 @@ puts ""
 puts "delete that element from array names"
  names.delete_at(0)
  puts names
+
+########################
+## Feedback from Jason
+# - #1 - since the names have spaces after the comma, you should use string_names.split(', '). 
+#    - If you look at your output, the names start with spaces: ["Nino", " Nana", " Nunu", " Keti", " Giorgi", " Dato", " Vaxo", " Maxo", " Zura", " Irakli", " Mako", " Bidzina"]
+#    - also, %w should use () instead of []: %w(Nino Nana)
+# - #2 - when you use %w to create an array you do not need to put ',' inbetween each name.
+#   - just do: %w[Nino Nana Nunu Keti Giorgi Dato Vaxo Maxo Zura Irakli Mako Bidzina]
+# - #3 - nice use of uniq!
+# - #3 - as with #2, no spaces when using %w and make sure you use (): %w(['Nino', 'F'] ['Nunu', 'F']) 
+# - #4 - how did you come up with an index of 11 for your last index? Did you count?
+#   - Ruby makes this easy for you: demographics.last[1]
+# - #5 - You found the index of Nino and saved it to names_index so you should use it in the next statement:
+#   - puts "#{names[names_index]} is my friend"
+# - #6 - Like #5, use the variable value for the index instead of hard-coding the 0
+#   - names.delete_at(names_index)
+# good job!
