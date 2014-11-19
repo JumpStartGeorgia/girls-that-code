@@ -53,9 +53,9 @@ puts "x != z = #{x != z}"
 #   - x > 3 && y > 3 will result in true
 #   - x > 3 && y < 3 will result in false since y < 3 is false 
 # - || = or - only one item needs to be true to return true
-#   - x > 3 && y > 3 will result in true
-#   - x > 3 && y < 3 will result in true
-#   - x < 3 && y < 3 will result in false
+#   - x > 3 || y > 3 will result in true
+#   - x > 3 || y < 3 will result in true
+#   - x < 3 || y < 3 will result in false
 puts "x > 3 && y > 3 = #{x > 3 && y > 3}"
 puts "x > 3 && y < 3 = #{x > 3 && y < 3}"
 puts "x > 3 || y > 3 = #{x > 3 || y > 3}"
@@ -63,7 +63,6 @@ puts "x > 3 || y < 3 = #{x > 3 || y < 3}"
 puts "x < 3 || y < 3 = #{x < 3 || y < 3}"
 
 # you can append as many && or || statements together as you wish
-
 
 #############################
 puts ""
