@@ -22,7 +22,7 @@ office_sale_100sqm = "(office_sale_100sqm.select{|row| row[1]} == 'for sale' && 
 puts "----------"
 puts " bonus "
 puts "----------"
-puts "don't know"
+puts "I really don't know"
 
 ########################
 ## Feedback from Jason
