@@ -1,10 +1,12 @@
-require 'CSV'
+require 'csv'
+#require 'CSV'
 puts "------------------"
 puts "----- Step 1 -----"
 puts "------------------"
 
 
-rows = CSV.read('D:/Ruby/girls-that-code/notes/makler_november.csv',headers: true)
+rows = CSV.read("../../../../notes/makler_november.csv", headers:true)
+#rows = CSV.read('D:/Ruby/girls-that-code/notes/makler_november.csv',headers: true)
 # When i try to indicate file path like ../../../../notes/makler_november.csv ruby gives me error no such file or directory:(
 puts "There are #{rows.length} rows in csv file"
 
@@ -43,3 +45,14 @@ puts "------------------"
 
 office_sale_100sqm.sort_by! {|i| i[7]}
 puts "Most expensive office costs #{office_sale_100sqm[0][7]} and least expensive office costs #{office_sale_100sqm[office_sale_100sqm.length-1][7]}"
+
+
+########################
+## Feedback from Jason
+# #1 - I changed your CSV.read statement so that I could read the file. You had the path to the file on your machine hard-coded. Instead you could have used the dots like I did.
+#    - I had to change your require 'CSV' to require 'csv' to make the file work
+# #4 - In your tests, one of the statements is using '=' instead of '=='
+# #6 - good job on figuring out how to use sort_by!
+#    - remember you want to sort by numbers but CSV.read converted everything to strings. If you do the sort again telling ruby to sort numbers, you will get different answers
+#    - now that the array is sorted, you could have used office_sale_100sqm.first and office_sale_100sqm.last to get the least and most expensive
+# good job!

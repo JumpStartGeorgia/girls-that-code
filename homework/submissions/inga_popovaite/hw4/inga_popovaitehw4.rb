@@ -2,7 +2,8 @@ puts "step 1"
 puts "Create a variable called 'rows' and load the data from the csv file into it. Write a sentence indicating how many items are in rows"
 puts ""
 require 'csv'
-rows = CSV.read("/home/inga/Documents/girlsthatcode/girls-that-code/notes/makler_november.csv", headers:true)
+#rows = CSV.read("/home/inga/Documents/girlsthatcode/girls-that-code/notes/makler_november.csv", headers:true)
+rows = CSV.read("../../../../notes/makler_november.csv", headers:true)
 puts "there are #{rows.length} items in the dataset named 'rows' "
 puts ""
 puts "step 2"
@@ -30,3 +31,8 @@ Old Tbilisi') && (row[9].to_i >=100 && row[9].to_i <= 200)}
 puts "There are #{office_sale_100sqm.length} 100-200 sqm offices for sale in Vake-Saburtalo or Old Tbilisi"
 puts ""
 
+########################
+## Feedback from Jason
+# #1 - I changed your CSV.read statement so that I could read the file. You had the path to the file on your machine hard-coded. Instead you could have used the dots like I did.
+# #4 - the text for testing for a house is 'private house', not 'house'
+# good job!
