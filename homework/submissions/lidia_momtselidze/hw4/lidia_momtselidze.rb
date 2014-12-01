@@ -1,12 +1,22 @@
+<<<<<<< HEAD
+#require 'csv'
+require 'csv'
+=======
 require 'csv'
 #require 'CSV'
+>>>>>>> ca1db03166c6c4c09be214bd24efedce55ce5a8e
 puts "------------------"
 puts "----- Step 1 -----"
 puts "------------------"
 
+<<<<<<< HEAD
+rows = CSV.read("../../../../notes/makler_november.csv", headers:true)
+#rows = CSV.read('../../../../notes/makler_november.csv',headers: true)
+=======
 
 rows = CSV.read("../../../../notes/makler_november.csv", headers:true)
 #rows = CSV.read('D:/Ruby/girls-that-code/notes/makler_november.csv',headers: true)
+>>>>>>> ca1db03166c6c4c09be214bd24efedce55ce5a8e
 # When i try to indicate file path like ../../../../notes/makler_november.csv ruby gives me error no such file or directory:(
 puts "There are #{rows.length} rows in csv file"
 
