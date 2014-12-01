@@ -5,10 +5,12 @@ puts "----- Step 1 -----"
 puts "------------------"
 
 require 'csv'
-rows = CSV.read('makler_november.csv')
+rows = CSV.read("../../../../notes/makler_november.csv")
+#rows = CSV.read('makler_november.csv')
 puts "There are #{rows.length} items in the row."
 
-rows = CSV.read('makler_november.csv', headers: true)
+rows = CSV.read("../../../../notes/makler_november.csv", headers:true)
+#rows = CSV.read('makler_november.csv', headers: true)
 puts "With CSV.read(headers: true), there are #{rows.length} items in the row."
 
 
@@ -51,6 +53,21 @@ puts "There are #{office_sale_100sqm.length} offices for sale in Old Tbilisi or 
 
 
 
+<<<<<<< HEAD
 
 
 
+=======
+#### office_sale_100sqm.sort_by {|rows| rows [8]}
+
+
+########################
+## Feedback from Jason
+# #1 - I changed your CSV.read statement so that I could read the file. You had the path to the file on your machine hard-coded. Instead you could have used the dots like I did.
+# #2 - You were supposed to search for apartments for rent, instead you did a search for everything that is for rent
+# #3 - You want to search for Saburtalo in column 20, not 15.
+# #4 - Tbilisi is in column 18, you forgot to search for private houses and the rooms is in column 24
+# #5 - You forgot to search for 'for sale' and the places are in column 19
+
+# your code is good, you just miscounted the columns or forgot a search parameter.  good try!
+>>>>>>> ca1db03166c6c4c09be214bd24efedce55ce5a8e
