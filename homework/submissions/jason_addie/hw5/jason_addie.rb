@@ -1,24 +1,43 @@
-# homework 5
+# Homework Assignment #5
+# Searching for data in arrays:
+# 
+# We'll keep analyzing some data in arrays, this time we'll use a new CSV file: the US diary (us-diary.csv), 
+# which lists details of about 500 people living in USA.
+# I strongly suggest you refer to the notes from class 7 (notes/class7.rb) for help on using the CSV file and doing searches.
 
-puts "------------------"
-puts "----- Step 1 -----"
-puts "------------------"
 
+# - if you need help with arrays, try here: http://www.ruby-doc.org/core-2.1.3/Array.html
+# - if you need help with loading the csv, try here: http://ruby-doc.org/stdlib-2.1.3/libdoc/csv/rdoc/CSV.html
+
+##################
+#### IMPORTANT: after each step, use a puts statement to write out the variable(s) that you just created, like:
+#### puts "new_poem = #{new_poem}"
+#### 
+#### It will also be good to use a puts statement as a separator between each step, like:
+#### puts "------------------"
+#### puts "----- Step 3 -----"
+#### puts "------------------"
+####
+#### These are not required, but it does help make it easier to look at your output and know what your are looking at.
+##################
+
+
+###
 # 1. First things first: let's load the US diary CSV file.
 # - you will find us-diary.csv, in the notes folder. Make sure you copy it in the same folder where this Ruby file (the one you're reading right now!) is.
 # - don't forget to import the 'csv' Ruby library
 # - the us-diary has a line of headers. Make sure to take this into consideration, when you read the file.
 # - store the content of the file in a variable called 'people'
 
+puts "------------------"
+puts "--- step 1 ---"
+puts "------------------"
+
 require 'csv'
 
-people = CSV.read('us-diary.csv', headers: true)
-puts "load US diary CSV file."
+people = CSV.read('../../../../notes/us-diary.csv', headers:true)
+puts "there are #{people.length} people"
 
-
-puts "------------------"
-puts "----- Step 2 -----"
-puts "------------------"
 
 # 2. We are going to display the full names of the people living in New York City
 # - First, create a variable called 'ny_people', which gathers all the people living in New York city.
@@ -26,17 +45,13 @@ puts "------------------"
 #   IMPORTANT: each element of the 'ny_names' array with be a full name. Make you take this into consideration, when using your 'map' method.
 # - Display the content of your 'ny_names' variable on the screen.
 
-ny_people = people.select {|row| row[4] == 'New York'}
-
-ny_names = ny_people.map {|row| [row[0] + " " + row[1] ]}
-
-puts ny_names
-
-
-
 puts "------------------"
-puts "----- Step 3 -----"
+puts "--- step 2 ---"
 puts "------------------"
+my_people = people.select{|x| x[4] == 'New York'}
+puts "there are #{my_people.length} people in NYC"
+my_names = my_people.map{|x| "#{x[0]} #{x[1]}"}
+puts "here are their names: #{my_names.join(', ')}"
 
 # 3. Display the full name and the postal code of those who own a GMail address. The postal code will be sorted in a descending order
 # - First, create a variable called 'gmail_people', which gathers all the people owning a GMail address.
@@ -44,20 +59,14 @@ puts "------------------"
 # - Sort the selected information by postal code, using the 'sort_by' method. Remember that we need the information sorted in a descending order. Store this information in a varaible called 'sorted_gmail_people'
 # - Display the content of the sorting on the screen.
 
-gmail_people = people.select {|row| row[10].include?'gmail.com' }
-
-mapped_gmail_people = gmail_people.map{|row| [(row[0] + ' ' + row[1]), row[7].to_i]}
-
-sorted_gmail_people = mapped_gmail_people.sort_by {|row| row[1]}
-
-puts sorted_gmail_people
-
-
-
-
 puts "------------------"
-puts "----- BONUS  -----"
+puts "--- step 3 ---"
 puts "------------------"
+gmail_people = people.select{|x| x[10].include?('gmail.com')}
+puts "there are #{gmail_people.length} people with a gmail email address"
+mapped_gmail_people = gmail_people.map{|x| ["#{x[0]} #{x[1]}", x[7]]}
+sorted_gmail_people = mapped_gmail_people.sort_by{|x| -x[1].to_i}
+puts "here are these people sorted by postal code: #{sorted_gmail_people}"
 
 
 # 4 BONUS QUESTION
@@ -71,20 +80,12 @@ puts "------------------"
 # "<first_name> <last_name> lives in the <postal_code> area"
 #
 # Make sure you replace <first_name> <last_name> and <postal_code> by the appropriate information.
+puts "------------------"
+puts "--- bonus ---"
+puts "------------------"
+sorted_gmail_people.each do |person|
+  puts "#{person[0]} lives in the #{person[1]} area"
+end
 
 
-####sorted_gmail_people.each do {{|row| row[0]} lives in the {|row| row[1]} area.}
 
-
-########################
-## Feedback from Jason
-## - In general, when you are creating a new string, what you are doing works, but you can also do the following:
-##   ny_names=ny_people.map{|i| "#{i[0]} #{i[1]}" } - may be easier to read
-## #2 - when you are creating ny_names, you do not need to put the full name into a new array:
-##      - you have:    ny_names = ny_people.map {|row| [row[0] + " " + row[1] ]}
-##      - alternative: ny_names = ny_people.map {|row| row[0] + " " + row[1] }
-## #3 - the directions asked to have the gmail people sorted in descending order. What you have is ascending.
-##      - by converting the zip code to a number in mapped_gmail_people, you are losing the starting '0' for zip codes that start with '0'. This could give you unintended results.
-## #4 - you were very close: 
-##      sorted_gmail_people.each do {|person| puts "#{person[0]} lives in the #{person[1]} area"}
-## good job!

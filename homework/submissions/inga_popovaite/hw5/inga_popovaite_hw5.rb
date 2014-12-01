@@ -26,3 +26,14 @@ puts "BONUS"
 puts " Try to display nicely the information contained in 'sorted_gmail_people' variable, using an 'each' loop (Array.each)"
 puts "-------------------------"
 sorted_gmail_people.each { |people| print people [0], " lives in the ", people [1], " area. \n" } 
+
+
+########################
+## Feedback from Jason
+## - In general, when you are creating a new string, what you are doing works, but you can also do the following:
+##   ny_names=ny_people.map{|i| "#{i[0]} #{i[1]}" } - may be easier to read
+## #2 - when you are creating ny_names, you do not need to put the full name into a new array:
+##      - you have:    ny_names = ny_people.map {|row| [row[0] + " " + row[1] ]}
+##      - alternative: ny_names = ny_people.map {|row| row[0] + " " + row[1] }
+## #3 - good job of testing if people[10] has a value!
+## great job!
