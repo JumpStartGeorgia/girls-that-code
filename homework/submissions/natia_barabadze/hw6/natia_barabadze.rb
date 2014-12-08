@@ -61,17 +61,15 @@ puts "------------------"
 # the apartment is located in Tbilisi. Do that in a pretty way.
 
 
-
 ###write to the screen the 'posting_id' and the number of apartments
 ## apartments or bedrooms?
 
-posts_three = posts_garages.select {|record| record[0][-1,1] == '3' && record[39] != nil? && record[25].to_i == '3' && record[2] == 'apartment' }
+posts_three = posts_garages.select {|record| record[0][-1] == '3' && record[39] != nil? && record[25].to_i == '3' && record[2] == 'apartment' }
 
 posts_three.each do |record|
 
   if record[18] == 'Tbilisi'
-    puts "#{record[0]} has #{record[25].length} bedrooms".
+    puts "#{record[0]} has #{record[25]} bedrooms".
 
   end
-  puts "#{record[0]} has #{record[25].length} bedrooms".
 end
