@@ -13,7 +13,7 @@ puts cars_efficient_top
 puts "the top most fuel efficient cars of 2015 are #{cars_efficient_top[0]}, #{cars_efficient_top[1]}, #{cars_efficient_top[2]}, #{cars_efficient_top[3]}, #{cars_efficient_top[4]}"
 puts "--------------------------------"
 puts "What percent of all the cars have 2-wheel drive?"
-wheel = cars.select{ |cars| cars[28].include?('2-Wheel Drive') }.length.to_i / cars.length.to_i * 100
+wheel = cars.select{ |cars| cars[28].include?('2-Wheel Drive') }.length.to_f / cars.length.to_i * 100
 puts wheel
 puts "-----------------------------"
 puts "Find all the cars that have a highway FE (Hwy FE (Guide) - Conventional Fuel) value which is 10 points higher than the conventional
