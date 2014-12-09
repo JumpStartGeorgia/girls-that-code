@@ -6,7 +6,6 @@ puts "_____1_____"
 
 require 'csv'
 cars = CSV.read('2015_fuel_efficiency_guide.csv', headers: true)
-
 puts cars.length
 
 
@@ -17,9 +16,9 @@ puts cars.length
 
 puts "_____2_____"
 
-most_efficient_cars = cars.select {|record| record[9].to_i >= 40}.uniq
-sorted_cars = most_efficient_cars.sort_by {|record| record[9]}.first[0..4]
-puts "The manufacturers of the top 5 most fuel efficient cars of 2015 are #{sorted_cars}"
+most_efficient_cars = cars.select {|record| record[0].to_i==2015 && record[9].to_i >= 40}
+top_cars = most_efficient_cars.map {|record| record[1][0..4]}
+puts "The manufacturers of the top 5 most fuel efficient cars of 2015 are #{top_cars.uniq}"
 
 
 
@@ -30,7 +29,11 @@ puts "The manufacturers of the top 5 most fuel efficient cars of 2015 are #{sort
 puts "_____3_____"
 
 wheel = cars.select {|record| record[28].include?'2-Wheel Drive'}
-puts "(#{wheel.length} / #{cars.length}) * 100"
+
+percent = (wheel.length.to_f/cars.length.to_f) * 100
+puts percent.round
+
+
 
 
 # 4. Find all the cars that have a highway FE (Hwy FE (Guide) - Conventional Fuel) value which is 10 points higher than the conventional
@@ -41,3 +44,9 @@ puts "(#{wheel.length} / #{cars.length}) * 100"
 #     Ex. "The Toyota Prius C has few cylinders and good highway mileage (X more than conventional)."
 
 puts "_____4_____"
+
+hwy_fe = cars.select {|record| [record[10] - record[9]].to_f >= 10}
+puts hwy_fe
+
+
+
