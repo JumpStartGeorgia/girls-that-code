@@ -35,7 +35,5 @@ if select_cars[7]==2
 puts
 else
 puts
-
-
 end
 end
