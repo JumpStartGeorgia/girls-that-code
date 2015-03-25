@@ -61,6 +61,10 @@ puts "poem = #{poem}"
 puts "poemlength/spacecount = #{(poem.length/poem.count(' ').to_f).round(5)}"
 
 
+########################
+## Feedback from Jason
+# - small thing - in step 5, when counting a and g, the assignment asks to use new_poem
+# good job!
 
 
 
