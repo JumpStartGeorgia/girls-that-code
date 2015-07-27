@@ -48,5 +48,12 @@ end
 
 puts""
 
-
+##################################
+## feedback from jason:
+## #3 - Your if statements work, but would be better as an if else statement. 
+##      In general, sometimes it is possible for the item you are testing to meet both if statements and in that case both actions would have been performed instead of just the one.
+##      That is why it is better to do an if else like:
+        # if record[2] == 'apartment' && !record[25].nil?
+        # elsif record[2] !='apartment'
+        # end
 

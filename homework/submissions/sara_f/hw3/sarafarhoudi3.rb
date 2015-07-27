@@ -82,3 +82,9 @@ puts "Names =\n#{names}"
 
 
 
+##############################
+## feedback from jason:
+## #1 - names_string should just be a string of names - not an array
+##    - then to get an array of names you want to split the string by spaces (exactly what you did in #2 for names2)
+##    - syntax for %w is %w(), not %w[]
+## Good job on the rest!

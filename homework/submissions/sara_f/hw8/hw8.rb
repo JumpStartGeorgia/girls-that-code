@@ -5,7 +5,8 @@ puts ""
 
 require 'csv'
 
-data = CSV.read('makler_november.csv', headers: true)
+# data = CSV.read('makler_november.csv', headers: true)
+data = CSV.read('../../../../notes/makler_november.csv', headers:true)
 
 puts data.length
 
@@ -103,3 +104,8 @@ word_count_sorted = word_count.sort_by { |k, v| -v }
 word_count_sorted[0..4].each do |k, v|
   puts "word: #{k}, number: #{v}"
 end
+
+
+###################################
+## feedback from jason:
+# good job!

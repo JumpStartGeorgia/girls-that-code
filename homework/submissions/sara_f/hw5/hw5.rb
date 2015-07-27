@@ -44,3 +44,6 @@ puts ""
 
 sorted_gmail_people.each {|record| print record[0], " lives in the ",record[1]," area\n" }
 
+#####################################
+## feedback from jason:
+## good job!
