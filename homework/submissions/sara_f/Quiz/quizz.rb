@@ -103,11 +103,31 @@ puts ""
 puts ""
 
 
-#Identify the cars with the top five Combined FE values with more than 4 cylinders.
+puts "Identify the cars with the top five Combined FE values with MORE than 4 cylinders."
+puts ""
+puts ""
 
-comb_fe_over_4 = data.select{|fuel| fuel[11].to_i && fuel[7].to_i > 4}
+cars_over_4 = data.select{|fuel| fuel[7].to_i > 4}.sort_by{|fuel| -fuel[11].to_i}
 
-top_five = comb_fe_over_4[0..4]
+top_five = cars_over_4[0..4]
+
+puts ""
+puts ""
+
+top_five.each do |fuel|
+	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[11].to_i} points of Combined FE - Conventional fuel."
+end
+puts ""
+puts ""
+
+puts "Top five cars combined FE WITH 4 cylinders."
+
+puts ""
+puts ""
+
+cars_with_4 = data.select{|fuel| fuel[7].to_i == 4}.sort_by{|fuel| -fuel[11].to_i}
+
+top_five = cars_with_4[0..4]
 
 puts ""
 puts ""
@@ -116,37 +136,93 @@ top_five.each do |fuel|
 	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[11].to_i} points of Combined FE - Conventional fuel."
 end
 
-#Top five cars combined FE with 4 cylinders.
-
-puts ""
-puts ""
-
-comb_fe_over_4 = data.select{|fuel| fuel[11].to_i && fuel[7].to_i == 4}
-
-top_five = comb_fe_over_4[0..4]
-
-puts ""
-puts ""
-
-top_five.each do |fuel|
-	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[11].to_i} points of Combined FE - Conventional fuel."
-end
-
 puts ""
 puts ""
 
 
-#Top five cars with the greatest difference in the City vs Hwy (= City-Hwy).
+puts "Top five cars with MORE than 4 cylinders sorted by the greatest difference in the Hwy- City (= Hwy -City)."
 
-diff_city_hwy_fe = data.select{|fuel| (fuel[9].to_i - fuel[10].to_i)}.sort_by.first
+puts ""
+puts ""
 
-top_five_diff = diff_city_hwy_fe[0..4]
+diff_city_hwy_fe_more_than_4 = data.select{|fuel| fuel[7].to_i > 4}.sort_by{|fuel| -(fuel[10].to_i - fuel[9].to_i)}
 
-top_five.each do |fuel|
-	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[9].to_i-fuel[10].to_i} points of difference in higher FE when driving in the City vs. Highway."
+top_five_diff = diff_city_hwy_fe_more_than_4[0..4]
+
+top_five_diff.each do |fuel|
+	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[10].to_i-fuel[9].to_i} points of difference in FE when driving in the City (#{fuel[9]}) vs. Highway (#{fuel[10]})."
 end
 
 puts ""
 puts ""
 puts ""
 
+puts  "Top five WITH 4 cylinders sorted by the greatest difference in the Hwy- City (= Hwy -City)."
+puts ""
+puts ""
+
+diff_city_hwy_fe_with_4 = data.select{|fuel| fuel[7].to_i == 4}.sort_by{|fuel| -(fuel[10].to_i - fuel[9].to_i)}
+
+top_five_diff_with_4 = diff_city_hwy_fe_with_4[0..4]
+
+top_five_diff_with_4.each do |fuel|
+	puts "The #{fuel[1]} #{fuel[3]} have #{fuel[7]} cylinders and a good highway mileage including #{fuel[10].to_i-fuel[9].to_i} points of difference in FE when driving in the City (#{fuel[9]}) vs. Highway (#{fuel[10]})."
+end
+
+puts ""
+puts ""
+puts ""
+puts ""
+puts ""
+puts ""
+
+puts "Sorting the top five manufacturers sorted by how many carlines they have? --> Manufactuers name and total number of cars."
+
+car_mfr = data.map{|fuel| fuel[1]}
+uniq_mfr = data.map{|fuel| fuel[1]}.uniq
+puts ""
+
+puts "There are #{uniq_mfr.length} manufacturers and they are"
+
+puts ""
+
+puts uniq_mfr
+puts ""
+puts ""
+puts ""
+
+puts "How many carelines does a manufacturer have?"
+
+mfr_array = data.map{|fuel| fuel[1]}
+
+car_count = Hash.new(0)
+
+mfr_array.each do |mfr|
+	car_count[mfr] += 1 
+end
+
+puts ""
+puts car_count
+
+puts ""
+puts ""
+
+car_count_sorted = car_count.sort_by { |k, v| -v}
+
+car_count_sorted.each do |k, v|
+	puts "Key: #{k}, Value: #{v}"
+end
+
+top_five = car_count_sorted[0..4]
+
+puts ""
+puts ""
+
+puts "The top five manufacturers sorted by those with most cars are:"
+
+puts ""
+
+puts top_five
+
+puts ""
+puts ""
