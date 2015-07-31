@@ -53,4 +53,9 @@ puts ""
 
 
 
-
+##############################
+## feedback from jason
+## #1 - Small detail, but hw asked for variable name of rows, not row. It makes more sense to use the plural form since there are many items.
+## #3 - You misspelled 'apartments' in the test, it is actually 'apartment' and that is why you got 0 results.
+##    - You did it correctly, but here is another way: instead of using row.select with all of the statements, you could have done apt_for_rent.select and just added in the Saburtalo test.
+## Good job!
